@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EdTech - Empowering Education</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">EdTech</div>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+      <div class="hero-content">
+        <h1>Empower Your Learning Journey</h1>
+        <p>
+          MyEdTech provides innovative, data-driven learning tools to
+          revolutionize education. Whether you're a student or a teacher, we
+          have the solutions you need to succeed.
+        </p>
+        <button class="cta-btn">Get Started Today</button>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <h2>Our Key Features</h2>
+      <div class="features-grid">
+        <div class="feature" role="region">
+          <i class="icon">&#9881;</i>
+          <h3>Interactive Lessons</h3>
+          <p>
+            Engage students with real-time interactive content, quizzes, and
+            assessments.
+          </p>
+        </div>
+        <div class="feature" role="region">
+          <i class="icon">&#9733;</i>
+          <h3>Analytics Dashboard</h3>
+          <p>Track student progress with detailed insights and reports.</p>
+        </div>
+        <div class="feature" role="region">
+          <i class="icon">&#128640;</i>
+          <h3>Collaboration Platform</h3>
+          <p>
+            Connect students and teachers with chat, video calls, and
+            collaboration tools.
+          </p>
+        </div>
+        <div class="feature" role="region">
+          <i class="icon">&#128187;</i>
+          <h3>Mobile App</h3>
+          <p>
+            Access your courses on the go with our fully responsive mobile app.
+          </p>
+        </div>
+        <div class="feature" role="region">
+          <i class="icon">&#128101;</i>
+          <h3>24/7 Support</h3>
+          <p>
+            Our support team is always available to assist with issues and
+            answer questions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+      <h2>Flexible Pricing Plans</h2>
+      <p>
+        Choose the plan that suits your needs, whether you're an individual or
+        part of an institution.
+      </p>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Basic</h3>
+          <p>$19/month</p>
+          <ul>
+            <li>Access to all courses</li>
+            <li>Basic analytics reports</li>
+            <li>Mobile app access</li>
+            <li>Email support</li>
+          </ul>
+          <button class="cta-btn">Sign Up</button>
+        </div>
+        <div class="pricing-card">
+          <h3>Pro</h3>
+          <p>$39/month</p>
+          <ul>
+            <li>Advanced analytics</li>
+            <li>Customizable assessments</li>
+            <li>Collaboration tools</li>
+            <li>Priority email & phone support</li>
+          </ul>
+          <button class="cta-btn">Sign Up</button>
+        </div>
+        <div class="pricing-card">
+          <h3>Enterprise</h3>
+          <p>$99/month</p>
+          <ul>
+            <li>Custom integrations</li>
+            <li>Dedicated account manager</li>
+            <li>Unlimited storage</li>
+            <li>24/7 priority support</li>
+          </ul>
+          <button class="cta-btn">Sign Up</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      id="testimonials"
+      class="testimonials"
+      aria-label="Customer Testimonials"
+    >
+      <h2>Customer Testimonials</h2>
+      <p>See what educators and students are saying about MyEdTech.</p>
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>
+              "MyEdTech transformed the way we teach our students. The
+              interactive lessons keep them engaged."
+            </p>
+            <h4>– Sarah Lee, Educator</h4>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>
+              "The collaboration features are fantastic. My students are more
+              connected and work together effectively."
+            </p>
+            <h4>– Mark Johnson, Teacher</h4>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>
+              "I love using MyEdTech’s mobile app. I can study anytime and track
+              my progress, even on the go!"
+            </p>
+            <h4>– Emily Davis, Student</h4>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+      <button class="next-btn" onclick="nextSlide()">&#10095;</button> -->
+    </section>
+
+    <!-- New FAQ Section -->
+    <section id="faq" class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h4 onclick="toggleFaq(this)">What makes MyEdTech different?</h4>
+        <p>
+          MyEdTech provides a seamless, personalized learning experience with
+          data-driven tools, helping educators and students succeed.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h4 onclick="toggleFaq(this)">How can I get support?</h4>
+        <p>
+          You can access our 24/7 support through our platform’s live chat,
+          email, or by contacting your dedicated support manager.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h4 onclick="toggleFaq(this)">Are there any discounts?</h4>
+        <p>
+          Yes! We offer special pricing for educational institutions, as well as
+          occasional promotions for individual users.
+        </p>
+      </div>
+    </section>
+
+    <script>
+      function toggleFaq(faq) {
+        faq.parentElement.classList.toggle("active");
+      }
+    </script>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 MyEdTech. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+        <a href="#">LinkedIn</a>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("active");
+      }
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          const navLinks = document.querySelector(".nav-links");
+          navLinks.classList.remove("active");
+        });
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
