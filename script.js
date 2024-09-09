@@ -1,27 +1,22 @@
 function toggleMenu() {
+  console.log("toggle");
   const navLinks = document.querySelector(".nav-links");
-  navLinks.classList.toggle("show");
-}
 
-// Close the menu when a nav link is clicked
-function closeMenu() {
-  const navLinks = document.querySelector(".nav-links");
-  if (navLinks.classList.contains("show")) {
-    navLinks.classList.remove("show");
+  if (navLinks.style.display === "flex") {
+    navLinks.style.display = "none";
+  } else {
+    navLinks.style.display = "flex";
   }
 }
 
-// Add event listeners to close the menu when a nav link is clicked
+// Close menu on link click in mobile view
 document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", closeMenu);
-});
-
-// Add the event listener for the menu icon click
-document.querySelector(".menu-icon").addEventListener("click", toggleMenu);
-
-// Add event listeners to all nav links to close the menu on click
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", closeMenu);
+  link.addEventListener("click", () => {
+    const navLinks = document.querySelector(".nav-links");
+    if (window.innerWidth <= 768) {
+      navLinks.style.display = "none"; // Hide menu on link click in mobile view
+    }
+  });
 });
 
 // Slider Functionality for Testimonials with auto-slide

@@ -80,8 +80,7 @@ header.sticky {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("hero-bg.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -340,43 +339,40 @@ footer p {
   margin-top: 1rem;
 }
 
-/* Media Queries for Mobile View */
+/* Mobile View (Up to 768px) */
 @media (max-width: 768px) {
-  header {
-    padding-right: 70px;
-    padding-left: 32px;
-    /* padding-bottom: 210px; */
-  }
-  .hero {
-    height: 100vh;
-  }
-
   .nav-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    background-color: #fff;
+    font-weight: bolder;
+    display: none;
     flex-direction: column;
-    padding: 1rem;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
-    z-index: 100;
-  }
-  .nav-links.active {
-    max-height: 300px;
-    /* Adjust the height if necessary */
-    opacity: 1;
-  }
-  .nav-links.show {
-    max-height: 500px;
-    opacity: 1;
+    align-items: center;
+    width: 60%;
+    height: 775px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 70px;
+    right: 0;
   }
 
   .nav-links li {
     margin: 1rem 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  header {
+    padding-right: 33px;
+    padding-left: 33px;
+    width: 100%;
+  }
+
+  .hero {
+    height: 100vh;
   }
 
   .menu-icon {
