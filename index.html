@@ -35,7 +35,13 @@
           revolutionize education. Whether you're a student or a teacher, we
           have the solutions you need to succeed.
         </p>
-        <button class="cta-btn">Get Started Today</button>
+        <button class="cta-btn get-started-btn">Get Started Today</button>
+
+        <!-- Banner that appears on click -->
+        <div id="promoBanner" class="promo-banner">
+          Special Offer: Get 20% off on Pro and Enterprise plans!
+          <button class="close-banner">&times;</button>
+        </div>
       </div>
     </section>
 
@@ -99,7 +105,7 @@
             <li>Mobile app access</li>
             <li>Email support</li>
           </ul>
-          <button class="cta-btn">Sign Up</button>
+          <button class="cta-btn signup-btn">Sign Up</button>
         </div>
         <div class="pricing-card">
           <h3>Pro</h3>
@@ -110,7 +116,7 @@
             <li>Collaboration tools</li>
             <li>Priority email & phone support</li>
           </ul>
-          <button class="cta-btn">Sign Up</button>
+          <button class="cta-btn signup-btn">Sign Up</button>
         </div>
         <div class="pricing-card">
           <h3>Enterprise</h3>
@@ -121,13 +127,49 @@
             <li>Unlimited storage</li>
             <li>24/7 priority support</li>
           </ul>
-          <button class="cta-btn">Sign Up</button>
+          <button class="cta-btn signup-btn">Sign Up</button>
         </div>
       </div>
     </section>
 
+    <!-- Sign-Up Modal -->
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Sign Up for EdTech</h2>
+        <form>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your full name"
+            required
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email address"
+            required
+          />
+
+          <label for="plan">Select Plan</label>
+          <select id="plan" name="plan">
+            <option value="basic">Basic - $19/month</option>
+            <option value="pro">Pro - $39/month</option>
+            <option value="enterprise">Enterprise - $99/month</option>
+          </select>
+
+          <button type="submit" class="cta-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
     <!-- Testimonials Section -->
-    <!-- <section
+    <section
       id="testimonials"
       class="testimonials"
       aria-label="Customer Testimonials"
@@ -162,8 +204,62 @@
             <h4>– Emily Davis, Student</h4>
           </div>
         </div>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>
+              "As a school administrator, MyEdTech has made managing our
+              curriculum and student assessments a breeze."
+            </p>
+            <h4>– Michael Green, School Administrator</h4>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>
+              "The real-time analytics help me track student progress and adjust
+              lessons to meet their needs."
+            </p>
+            <h4>– Jessica Brown, Teacher</h4>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>
+              "MyEdTech’s support team is always ready to help us with any
+              technical issues. Their 24/7 support is amazing!"
+            </p>
+            <h4>– David Smith, IT Coordinator</h4>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>
+              "The interactive content keeps my students motivated and actively
+              engaged in their learning."
+            </p>
+            <h4>– Amanda Williams, Educator</h4>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>
+              "Thanks to MyEdTech, I can easily access my lessons on the mobile
+              app, even when I’m on the go."
+            </p>
+            <h4>– Tom Harris, Student</h4>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>
+              "With MyEdTech, we can customize assessments and collaborate
+              better as a team. It's the perfect platform for schools."
+            </p>
+            <h4>– Emma Johnson, Principal</h4>
+          </div>
+        </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- New FAQ Section -->
     <section id="faq" class="faq">
@@ -190,12 +286,6 @@
         </p>
       </div>
     </section>
-
-    <script>
-      function toggleFaq(faq) {
-        faq.parentElement.classList.toggle("active");
-      }
-    </script>
 
     <!-- Footer Section -->
     <footer>
